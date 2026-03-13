@@ -49,3 +49,25 @@ haha
 E = mc^2
 ## Résolution
 tadaaa
+
+### 4 Intéraction entre deux molécules
+#### Exercice 4.1 : Décrivez le type d'interaction qui peut se produire lorsque deux molécules s'approchent suffisamment l'une de l'autre. Expliquez également dans quelles conditions ce modèle d'interaction est pertinent et quelles hypothèses permettent de l'utiliser dans ce contexte.
+S'il y une collision, il y a un choc mou, c'est à dire qu'il n'y a aucune perte d'énergie entre avant et après la collision.
+
+Quand ils se rapprochent, je pense qu'il y a aussi une légère force d'attraction entre les molécuels.
+#### Question 4.2 : Avant d'implémenter le modèle de collision, proposez au minimum 4 scénarios de test permettant de vérifier que votre code fonctionne correctement. Vos cas de test doivent notamment permettre de contrôler : la conservation de la quantité de mouvement, la conservation de l'énergie cinétique et l'influence de l'angle de contact entre les deux molécules. Décrivez clairement chaque scénario (conditions initiales).
+- Collision frontale (0⁰):
+    1. 2 molécules identiques qui vont à la même vitesse: leurs deux vitesse devrait être pareil après le collison.
+    2. 2 molécules identiques qui vont à deux vitesses différentes: si la molécule `m1` va à une vitesse $\Vert\vec{v1}\Vert$ et `m2` à $\Vert\vec{v2}\Vert$, alors ils devraient s'échanger leurs normes de vitesses.
+        - Avant: m1 => $\Vert\vec{v1}\Vert$, m2 => $\Vert\vec{v2}\Vert$
+        - Après: m1 => $\Vert\vec{v2}\Vert$, m2, => $\Vert\vec{v1}\Vert$
+    La raison pour laquelle j'ai dit norme, c'est parce que les vecteurs dépendent de l'angle de collision.
+- Collision avec angle:
+    3. 2 molécules identiques peut importe leurs vitesses: 
+4. 2 molécules différents: 
+
+#### Question 4.3 : Rédigez une fonction qui détecte si deux molécules sont en interaction. Cette fonction doit renvoyer true lorsque la distance entre leurs centres est inférieure ou égale à la somme de leurs rayons et false dans le cas contraire.
+
+
+
+#### Question 4.4 : Implémentez l'algorithme étudié en cours avec Jessen permettant de mettre à jour l'état des molécules après une collision. À l'aide des cas de test définis à la question 4.2, vérifiez que votre implémentation respecte les propriétés physiques attendues.
