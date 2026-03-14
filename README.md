@@ -67,7 +67,12 @@ Quand ils se rapprochent, je pense qu'il y a aussi une légère force d'attracti
 4. 2 molécules différents: 
 
 #### Question 4.3 : Rédigez une fonction qui détecte si deux molécules sont en interaction. Cette fonction doit renvoyer true lorsque la distance entre leurs centres est inférieure ou égale à la somme de leurs rayons et false dans le cas contraire.
-
-
-
+![](/res/img/is_collision.png)
 #### Question 4.4 : Implémentez l'algorithme étudié en cours avec Jessen permettant de mettre à jour l'état des molécules après une collision. À l'aide des cas de test définis à la question 4.2, vérifiez que votre implémentation respecte les propriétés physiques attendues.
+
+
+
+# Personal notes
+- Made molecule classes
+- Made is_collision function
+- Making the simulation plot
